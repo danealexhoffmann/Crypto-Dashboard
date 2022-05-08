@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import RAPID_API_KEY from "./apikey";
 
 const NewsFeed = () => {
   const [articles, setArticles] = useState(null);
@@ -10,7 +11,7 @@ const NewsFeed = () => {
       url: "https://crypto-news-live3.p.rapidapi.com/news",
       headers: {
         "X-RapidAPI-Host": "crypto-news-live3.p.rapidapi.com",
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        "X-RapidAPI-Key": RAPID_API_KEY,
       },
     };
 

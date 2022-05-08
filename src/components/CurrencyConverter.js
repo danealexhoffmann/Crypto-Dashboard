@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ExchangeRate from "./ExchangeRate";
 import axios from "axios";
+import RAPID_API_KEY from "./apikey";
 
 const CurrencyConverter = () => {
   const currencies = ["BTC", "ETH", "USD", "XRP", "LTC", "ADA"];
@@ -28,7 +29,7 @@ const CurrencyConverter = () => {
       },
       headers: {
         "X-RapidAPI-Host": "alpha-vantage.p.rapidapi.com",
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        "X-RapidAPI-Key": RAPID_API_KEY,
       },
     };
 
