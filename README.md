@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Daily-Planner.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## To start
+- (In a terminal window) Install dependencies with **npm install**
+- Rename **.env.dist** to **.env** and add your Rapid API key.
+- (In a terminal window) Run **npm start** to start server.
 
-## Available Scripts
+## Viewing the site locally
 
-In the project directory, you can run:
+Once you have installed all dependencies with **npm install** and started the server with **npm start**, a browser window should automatically pop-up navigating to (http://localhost:3000), where you will be able to see the full application locally. 
 
-### `npm start`
+## About the app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+My goal was to create a crypto-currency dashboard application using React, Axios and a few REST API's that allows you to convert different crypto currencies on the fly as well as show you the latest data about a crypto-currency's peformance and provide you with the latest headlines in crypto-related news. The app allows for the quick and up to date conversion of a few key crypto-currencies as well as USD. Data for each currency is searchable by coin. All information about each currency is completely up to date thanks to the use of the Coin Gecko API as well as APIs in the RAPID API library. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What I learnt building this project.
 
-### `npm test`
+This project helped me undestand how to use Axios to make API calls inside of a React application, how to pull only the data that is necessary for the app by reading API documentation and how to output that data visually in a user-friendly manner. I also learnt the importance of keeping your API keys safe and secure by excluding them in the published repository 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+There is currently a bug in the app while it is hosted on Netlify that blocks the API calls for the two Rapid APIs used in the app. I am currenlty working on this bug and hope to have it fixed ASAP! The application works as intended when hosted locally.
